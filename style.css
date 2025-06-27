@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+
+
+nav {
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+
+}
+
+
+.logo img {
+  width: 130px;
+  height: auto;
+  padding: 0 20px;
+}
+
+.center-nav {
+  display: flex;
+}
+
+.search {
+  display: flex;
+
+}
+
+.search input {
+  min-width: 550px;
+  padding: 10px 20px;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  border-top: 1px solid #C6C6C6;
+  border-left: 1px solid #C6C6C6;
+  border-bottom: 1px solid #C6C6C6;
+  border-right: none;
+  border-radius: 40px 0 0 40px;
+}
+
+.search button {
+  border: 1px solid #C6C6C6;
+  border-radius: 0 50px 50px 0;
+  padding: 10px 20px;
+}
+
+.mic {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  display: grid;
+  place-items: center;
+  margin-left: 15px;
+}
+
+.mic img {
+  width: 30px;
+}
+
+.side-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 50px;
+}
+
+.bell-icon {
+  width: 24px;
+}
+
+.avatar-crop,
+.channel-logo {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.create-btn {
+  display: flex;
+  padding: 8px 16px;
+  gap: 4px;
+  background-color: #F2F2F2;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.tags {
+  display: flex;
+  padding: 10px 20px;
+  gap: 15px;
+  font-weight: 400;
+}
+
+.tag {
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+
+.dark {
+  background: #000;
+  color: white;
+}
+
+.light {
+  background-color: #F2F2F2;
+
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  z-index: 999;
+  background-color: white;
+  height: 100vh;
+  padding-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.side-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-icons img {
+  width: 30px;
+}
+
+.side-icons p {
+  padding-left: 1px;
+  font-size: 10px;
+  max-width: 100%;
+  font-family: sans-serif;
+  margin-top: -5px;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.bar {
+  margin-top: 10px;
+  width: 24px;
+}
+
+.main-container {
+  width: 100%;
+}
+
+main {
+  min-height: 100vh;
+  background: white;
+}
+
+.thumbnail {
+  width: 426.75px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.verified {
+  height: 14px;
+  width: 14px;
+
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(426.75px, 1fr));
+}
+
+.card {
+  padding: 10px;
+  max-width: 444.75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-content {
+  padding-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.card h3 {
+  font-size: 20px;
+  width: 360.33px;
+}
+
+.content {
+  display: flex;
+  font-weight: 500;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.channel-name {
+  font-size: 14px;
+  color: #606060;
+
+}
+
+.content-status {
+  color: #606060;
+  display: flex;
+  font-size: 14px;
+  gap: 5px;
+  margin-top: -5px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* Makes sure the header stays on top */
+  background-color: white;
+  /* Or any background to prevent content behind showing */
+}
